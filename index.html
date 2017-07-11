@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- IOS Android 状态栏栏主题 -->
+    <meta name="theme-color" content="#2196f3">
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <title>健身</title>
+    <!-- Framework7 框架主题CSS -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- 个人项目CSS-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>--></head>
+<body>
+<!--app主框架试图-->
+<div class="views-swiper-container">
+    <div class="views swiper-wrapper">
+        <!--视图 首页-->
+        <div id="home" class="view view-main swiper-slide">
+            <div class="pages">
+                <div class="page index-page" data-page="homePage">
+                    <div class="page-content">
+                        <div class="home-wrap">
+                            <div class="home-top">
+                                <span>运动</span>
+                                <div class="home-top-R"></div>
+                            </div>
+                            <div class="home-content">
+                                <div class="home-content-time">
+                                    <p>
+                                        <span style="font-size: 45px;color:#FFAC27">864</span>
+                                        <span style="font-size: 16px;font-weight: 600;color: #1a1e23">分钟</span></p>
+                                </div>
+                                <div class="home-content-degree">
+                                    <p>
+                                        <span>完成</span>
+                                        <span style="font-size: 12px;"><i>40</i>次</span>
+                                    </p>
+                                    <p style="text-align: center">
+                                        <span>累计</span>
+                                        <span style="font-size: 12px;"><i>30</i>天</span>
+                                    </p>
+                                    <p style="text-align: right">
+                                        <span>消耗</span>
+                                        <span style="font-size: 12px;"><i>1870</i>千卡</span>
+                                    </p>
+                                </div>
+                                <div style="height: 1px;background:#efefef;"></div>
+                                <div class="home-ranking">
+                                    <span style="text-align: left;font-size: 12px;">本月好友排名</span>
+                                    <span style="text-align: right;color:#FFAC27">1</span>
+                                </div>
+                                <div style="height: 10px;background:#e4e4e4;"></div>
+                                <div class="home-syllabus">
+                                    <p style="text-align: center;">我的课程表</p>
+                                    <div class="home-syllabus-info" style="background:url(images/mj.jpg)no-repeat 50% 50%;
+                                     -webkit-background-size:100%;
+                                     background-size:100%;">
+                                        <a href="about.html" style="display: block;">
+                                        <p style="padding-top:5%;"><span>马甲线雕刻</span></p>
+                                        <p><span>30天</span><span style="margin-left: 5%;">腰部</span></p>
+                                        <p style="margin-top: 15%;"><span>已完成25/30天</span><span style="margin-left: 5%;">已有5345人参加</span></p>
+                                    </a>
+                                    </div>
+                                    <div style="height: 5px;background:#efefef;"></div>
+                                    <div class="home-syllabus-info" style="background: url(images/jr.jpg)no-repeat 50% 50%;
+                                     -webkit-background-size:100%;
+                                     background-size:100%;">
+                                        <a href="about.html" style="display: block;">
+                                        <p style="padding-top:5%;"><span>肌肉养成计划</span></p>
+                                        <p><span>30天</span><span style="margin-left: 5%;">胸部</span></p>
+                                        <p style="margin-top: 15%;"><span>已完成18/30天</span><span style="margin-left: 5%;">已有5245人参加</span></p>
+                                    </a>
+                                    </div>
+                                    <div style="height: 5px;background:#efefef;"></div>
+                                    <div class="home-syllabus-info" style="background: url(images/bj.jpg)no-repeat 50% 50%;
+                                     -webkit-background-size:100%;
+                                     background-size:100%;">
+                                        <a href="about.html" style="display: block;">
+                                        <p style="padding-top:5%;"><span>肌肉养成计划</span></p>
+                                        <p><span>30天</span><span style="margin-left: 5%;">背部</span></p>
+                                        <p style="margin-top: 15%;"><span>已完成20/30天</span><span style="margin-left: 5%;">已有4645人参加</span></p>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--视图 课程列表-->
+        <div id="bbs" class="view swiper-slide">
+            <div class="pages">
+                <div class="page" data-page="bbs">
+                    <div class="page-content">
+                        <div class="home-wrap">
+                            <div class="home-top">
+                                <span>健身</span>
+                                <div class="home-top-R"></div>
+                            </div>
+                            <div class="bbs-content">
+                                <div class="bbs-info"
+                                     style="background: url(images/b1.jpg)no-repeat;-webkit-background-size:100% ;background-size: 100%;">
+                                    <a href="about.html" style="display: block;"><span>跑前热身</span></a>
+                                </div>
+                                <div style="height: 2px;background: #ffffff;"></div>
+                                <div class="bbs-info"
+                                     style="background: url(images/b2.jpg)no-repeat;-webkit-background-size:100% ;background-size: 100%;">
+                                    <a href="about.html" style="display: block;"><span>燃脂入门</span></a>
+                                </div>
+                                <div style="height: 2px;background: #ffffff;"></div>
+                                <div class="bbs-info"
+                                     style="background: url(images/b3.jpg)no-repeat;-webkit-background-size:100% ;background-size: 100%;">
+                                    <a href="about.html" style="display: block;"><span>燃脂进阶</span></a>
+                                </div>
+                                <div style="height: 2px;background: #ffffff;"></div>
+                                <div class="bbs-info"
+                                     style="background: url(images/b4.jpg)no-repeat;-webkit-background-size:100% ;background-size: 100%;">
+                                    <a href="about.html" style="display: block;"><span>极速前进</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--视图 广场-->
+        <div id="couresList" class="view swiper-slide">
+            <div class="pages">
+                <div class="page" data-page="couresList">
+                    <div class="page-content">
+                        <div class="home-top">
+                            <span>广场</span>
+                            <div class="home-top-R"
+                                 style="background: url(images/照相机.svg)no-repeat 50% 50%;
+                                   -webkit-background-size: 100%;background-size: 100%;"></div>
+                        </div>
+                        <div class="tabs">
+                            <a href="#" id="btn1" class="active">推荐</a>
+                            <a href="#" id="btn2" class="">运动秀</a>
+                            <a href="#" id="btn3" class="">活动</a>
+                            <a href="#" id="btn4" class="">关注</a>
+                        </div>
+                        <div id="swiper-recommend" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                <div class="recommend-content">
+                                    <img src="images/banner.jpg" alt="" width="100%" style="margin-top: 4px;">
+                                    <div class="recommend">
+                                        <span style="display: block;height: 30px;line-height: 30px;background: #eaeaea;padding-left: 5%;">精彩动态</span>
+                                        <div class="recommend-main clear">
+                                            <div class="recommend-main-L">
+                                                <img src="images/y1.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-main-R">
+                                                <img src="images/y2.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-main-L">
+                                                <img src="images/y3.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-main-R">
+                                                <img src="images/y1.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recommend">
+                                        <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                            <span style="float: left;padding-left: 5%;">涨姿势</span><span
+                                                style="float: right;padding-right: 5%;">更多</span></p>
+                                        <div class="recommend-main clear">
+                                            <div class="recommend-main-L">
+                                                <img src="images/tc2.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-main-R">
+                                                <img src="images/tc3.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="recommend">
+                                        <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                            <span style="float: left;padding-left: 5%;">点点福利</span><span
+                                                style="float: right;padding-right: 5%;">更多</span></p>
+                                        <div class="recommend-main clear">
+                                            <div class="recommend-main-L">
+                                                <img src="images/w1.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                            <div class="recommend-main-R">
+                                                <img src="images/w2.jpg" alt="" width="100%">
+                                                <div class="recommend-info">
+                                                    <span>16年 最后一月 加油</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend-content">
+                                        <img src="images/banner.jpg" alt="" width="100%" style="margin-top: 4px;">
+                                        <div class="recommend">
+                                            <span style="display: block;height: 30px;line-height: 30px;background: #eaeaea;padding-left: 5%;">精彩动态</span>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">涨姿势</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/tc2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/tc3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">点点福利</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/w1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/w2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend-content">
+                                        <img src="images/banner.jpg" alt="" width="100%" style="margin-top: 4px;">
+                                        <div class="recommend">
+                                            <span style="display: block;height: 30px;line-height: 30px;background: #eaeaea;padding-left: 5%;">精彩动态</span>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">涨姿势</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/tc2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/tc3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">点点福利</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/w1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/w2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="recommend-content">
+                                        <img src="images/banner.jpg" alt="" width="100%" style="margin-top: 4px;">
+                                        <div class="recommend">
+                                            <span style="display: block;height: 30px;line-height: 30px;background: #eaeaea;padding-left: 5%;">精彩动态</span>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-L">
+                                                    <img src="images/y3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/y1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">涨姿势</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/tc2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/tc3.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommend">
+                                            <p class="clear" style="background: #eaeaea;height: 30px;line-height: 30px">
+                                                <span style="float: left;padding-left: 5%;">点点福利</span><span
+                                                    style="float: right;padding-right: 5%;">更多</span></p>
+                                            <div class="recommend-main clear">
+                                                <div class="recommend-main-L">
+                                                    <img src="images/w1.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                                <div class="recommend-main-R">
+                                                    <img src="images/w2.jpg" alt="" width="100%">
+                                                    <div class="recommend-info">
+                                                        <span>16年 最后一月 加油</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--视图 饮食-->
+        <div id="mySpace" class="view swiper-slide">
+            <div class="pages">
+                <div class="page" data-page="mySpace">
+                    <div class="page-content">
+                        <div class="home-wrap">
+                            <div class="home-top">
+                                <span>饮食</span>
+                            </div>
+                            <div class="Diet">
+                                <div class="Diet-top">
+                                    <div class="Diet-top-L">
+                                        <p>今日已摄入</p>
+                                        <p><span>1340</span><i>千卡</i></p>
+                                        <p>建议摄入小于1750千卡</p>
+                                    </div>
+                                    <div class="Diet-top-R clear">
+                                        <div class="Diet-top-R-L clear">
+                                            <div class="Diet-top-R-T clear">
+                                                <div class="clear">
+                                                    <p class="circle" style="background: #95e97c;
+                                                        float: left;
+                                                        margin-left:10px;"></p>
+                                                    <p style="font-size:12px;font-weight:600; float: left;
+                                                        line-height:12px;">适中</p>
+                                                </div>
+                                                <div class="bar-wrap" style="margin-left: 10px;">
+                                                    <p class="bar">
+                                                        <span></span>
+                                                    </p>
+                                                    <p>早</p>
+                                                </div>
+                                                <div class="bar-wrap">
+                                                    <p class="bar">
+                                                        <span style="height: 50px;"></span>
+                                                    </p>
+                                                    <p>午</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Diet-top-R-R">
+                                            <div class="Diet-top-R-T">
+                                                <div class="clear" style="margin-left: 10px;">
+                                                    <p class="circle" style="background: #ff3b31;float: left;
+                                                     margin-left:10px;"></p>
+                                                    <p style="font-size:12px;font-weight:600; float: left;
+                                                        line-height:12px;">过量</p>
+                                                </div>
+                                                <div class="bar-wrap" style="margin-left:15px;">
+                                                    <p class="bar">
+                                                        <span style="height: 40px"></span>
+                                                    </p>
+                                                    <p>晚</p>
+                                                </div>
+                                                <div class="bar-wrap">
+                                                    <p class="bar"></p>
+                                                    <p>加</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 10px;background:#e4e4e4;"></div>
+                                <div class="Diet-content">
+                                    <div class="Diet-content-info" style="background: url(images/breakfast.jpg)no-repeat 50% 50%;
+                                        -webkit-background-size: 100%;background-size: 100%;">
+                                        <p>
+                                            <span>减脂早餐</span>
+                                        </p>
+                                    </div>
+                                    <div style="height: 5px;background:#e4e4e4;"></div>
+                                    <div class="Diet-content-info" style="background: url(images/lunch.jpg)no-repeat 50% 50%;
+                                        -webkit-background-size: 100%;background-size: 100%;">
+                                        <p>
+                                            <span>减脂午餐</span>
+                                        </p>
+                                    </div>
+                                    <div style="height: 5px;background:#e4e4e4;"></div>
+                                    <div class="Diet-content-info" style="background: url(images/supper.png)no-repeat 50% 50%;
+                                        -webkit-background-size: 100%;background-size: 100%;">
+                                        <p>
+                                            <span>减脂晚餐</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Space" class="view swiper-slide">
+            <div class="pages">
+                <div class="page" data-page="mySpace">
+                    <div class="page-content">
+                        <div class="home-wrap">
+                            <div class="home-top">
+                                <a class="home-top-L" href="set.html"
+                                   style="background: url(images/设置.svg)no-repeat 50% 50%;
+                                   -webkit-background-size: 100%;background-size: 100%;"></a>
+                                <span>我的</span>
+                                <a class="home-top-R" href="#"></a>
+                            </div>
+                            <div class="Space-content">
+                                <div id="Space-top">
+                                    <div class="Space-head">
+                                        <div class="Space-head-main"
+                                             style="background: url(images/suolong.jpg)no-repeat 50% 50%;
+                                         -webkit-background-size: contain;background-size: contain;border:3px solid #fff">
+                                            <div class="Space-top-img"></div>
+                                        </div>
+                                        <p style="font-size: 16px;">上善若水任方圆</p>
+                                    </div>
+                                </div>
+                                <div class="Space-top-B">
+                                    <sapn class="Space-top-B-info">动态：12</sapn>
+                                    <sapn class="Space-top-B-info">关注：5</sapn>
+                                    <sapn class="Space-top-B-info">粉丝：160</sapn>
+                                </div>
+                                <div class="Space-info">
+                                    <a>运动记录</a>
+                                    <div style="height:2px;background: #e5e5e5;"></div>
+                                    <a>我的订单</a>
+                                    <div style="height: 2px;background: #e5e5e5;"></div>
+                                    <a>附近的人</a>
+                                    <div style="height: 2px;background: #e5e5e5;"></div>
+                                    <a href="set.html">设置</a>
+                                    <div style="height: 2px;background: #e5e5e5;"></div>
+                                    <a>常见问题</a>
+                                    <div style="height: 10px;background: #e5e5e5;"></div>
+                                    <input type="button" value="退出登陆">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="toolbar tabbar toolbar-bottom">
+        <div class="toolbar-inner views-pagination">
+
+        </div>
+    </div>
+</div>
+<!-- Framework7 JS库-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- app.js-->
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
